@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Time</title>
+
+</head>
+<body>
+
+	<!--There are many different methods to display Name of upcoming next day but this one is easy as i have tried others
+	but it took time and sometimes i got an error  while using Array . 
+	Try this method if you want to display Name of Days in Week. -->
+<h1 id="day1Name"></h1>
+
+<script type="text/javascript">
+   
+                    var event = new Date(new Date().setDate(new Date().getDate() + 1));
+					var day = (event.getDay());
+
+					
+					switch(day){
+                    	case 0:
+                    		day = "Sunday";
+                    		document.getElementById("day1Name").innerHTML = day;
+                    		break;
+                    	case 1:
+                    		day = "Monday";
+                    		document.getElementById("day1Name").innerHTML = day;
+                    		break;
+                    	case 2:
+                    		day = "Tuesday";
+                    		document.getElementById("day1Name").innerHTML = day;
+                    		break;
+                    	case 3:
+                    		day = "Wednesday";
+                    		document.getElementById("day1Name").innerHTML = day;
+                    		break;
+                    	case 4:
+                    		day = "Thursday";
+                    		document.getElementById("day1Name").innerHTML = day;
+                    		break;
+                    	case 5:
+                    		day = "Friday";
+                    		document.getElementById("day1Name").innerHTML = day;
+                    		break;
+                    	case 6:
+                    		day = "Saturday";
+                    		document.getElementById("day1Name").innerHTML = day;
+                    		break;
+
+                    	default:
+                    	  day = "Error!";
+                    	  document.getElementById("day1Name").innerHTML = day;
+                    	  break;
+      
+                    }
+</script>
+
+</body>
+</html>
